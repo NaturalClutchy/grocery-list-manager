@@ -1,32 +1,91 @@
-Grocery List Manager
-A beginner-friendly Python command-line application for maintaining a grocery list and saving it between sessions.
-Features
-- Add grocery items from the terminal.
-- View a numbered list of saved items.
-- Remove an item by its number.
-- Exit through a four-option menu.
-- Read items from and write items to grocery_list.txt for persistence between runs.
-Built with
-Python 3 and standard-library file input/output. No third-party packages are required.
-How to run
-1. Clone or download this repository.
-2. Open a terminal in the project directory.
-3. Make sure grocery_list.txt is in that directory (it is included in the repository).
-4. Run:
-   python "Grocery List Manager.py"
-5. Select a menu option by typing 1, 2, 3, or 4.
-Example menu
+# Grocery List Manager
+
+**Python Command-Line Application**
+
+## Overview
+
+A beginner-friendly Python application that allows users to create and manage grocery lists through a command-line interface.
+
+The application uses text-file storage to save grocery items between sessions.
+
+I developed this project while learning Python fundamentals, including loops, functions, lists, file handling, and user input.
+
+## Features
+
+- Add grocery items.
+- Display a numbered grocery list.
+- Remove grocery items by number.
+- Save grocery items to a text file.
+- Load previously saved items.
+- Navigate through a four-option menu.
+
+## Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Application development |
+| Text Files | Persistent data storage |
+| File I/O | Reading and writing data |
+
+## Installation
+
+### 1. Download or Clone the Repository
+
+Download the project files to your computer.
+
+### 2. Open the Project Directory
+
+Make sure `grocery_list.txt` exists in the same folder as the Python program.
+
+### 3. Run the Application
+
+```bash
+python "Grocery List Manager.py"
+```
+
+## Example Menu
+
+```text
 ==== Grocery List Manager ====
+
 1. Add Item
 2. Remove Item
 3. View List
 4. Exit
+```
 
-How the data is saved
-The script loads the list from grocery_list.txt at startup and rewrites that file with the current list after each menu action. Item names are converted to lowercase when added.
+## How It Works
 
-Current limitations and next steps
-This is a learning project. The text file is opened using a path relative to the current working directory, so run the script from the project folder. Currently, the program expects grocery_list.txt to exist; entering a non-numeric value when removing an item can raise an error. Planned improvements could include input validation and automatic file creation. These are suggestions, not implemented features.
+1. The application loads grocery items from `grocery_list.txt`.
+2. Users select an option from the menu.
+3. The application performs the requested operation.
+4. Changes are saved to the text file.
 
-Author
-Rene Garcia — GitHub profile
+## What I Learned
+
+- Working with Python lists.
+- Reading and writing text files.
+- Building menu-driven applications.
+- Using loops and conditional statements.
+- Managing user input.
+
+## Current Limitations
+
+- The program expects the grocery list file to exist.
+- Some invalid inputs may cause errors.
+- File paths are relative to the current working directory.
+
+## Future Improvements
+
+- Improve input validation.
+- Automatically create missing files.
+- Add item quantities and prices.
+- Improve error handling.
+
+These improvements are planned rather than currently implemented.
+
+## Author
+
+**Rene Garcia**
+
+Computer Science/Engineering Student at UCNJ
