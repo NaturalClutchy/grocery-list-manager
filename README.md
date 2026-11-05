@@ -21,9 +21,12 @@ Example menu
 2. Remove Item
 3. View List
 4. Exit
+
 How the data is saved
 The script loads the list from grocery_list.txt at startup and rewrites that file with the current list after each menu action. Item names are converted to lowercase when added.
+
 Current limitations and next steps
 This is a learning project. The text file is opened using a path relative to the current working directory, so run the script from the project folder. Currently, the program expects grocery_list.txt to exist; entering a non-numeric value when removing an item can raise an error. Planned improvements could include input validation and automatic file creation. These are suggestions, not implemented features.
+
 Author
 Rene Garcia — GitHub profile
